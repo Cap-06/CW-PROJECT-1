@@ -1,0 +1,191 @@
+.tab {
+  background: #d5edef;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tab > div {
+  margin: 15px;
+  text-align: center;
+}
+.tab button {
+  border: none;
+  background: #14718a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+.tab > div:nth-child(2) {
+  margin-bottom: 0 !important;
+  background: #14718a;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0 30px;
+}
+.line {
+  height: 23px;
+  background: #14718a;
+}
+#container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  min-width: 330px;
+}
+.cart-list {
+  width: 60%;
+}
+.cart-list > div {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.empty-cart {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 320px;
+}
+.empty-cart button {
+  width: 200px;
+  padding: 20px;
+  background: #14718a;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.empty-cart button:hover {
+  transform: scale(1.1, 1.1);
+}
+.imgdiv {
+  width: 40%;
+}
+.detaildiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 60%;
+  padding: 20px;
+}
+.checkout-list {
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.checkout-details {
+  color: tomato;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 900px) {
+  #container {
+    flex-direction: column;
+  }
+  .checkout-list {
+    width: 100%;
+  }
+  .cart-list {
+    width: 100%;
+  }
+  .cart-list > div {
+    flex-direction: column;
+  }
+  .imgdiv {
+    width: 100%;
+  }
+  .detaildiv {
+    width: 100%;
+  }
+}
+.checkout-list > div {
+  display: flex;
+  justify-content: space-between;
+}
+.price_div {
+  align-items: flex-end;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.strikeoff {
+  text-decoration: line-through;
+}
+.red {
+  color: red;
+}
+.price_div p {
+  margin: 0;
+  font-weight: bold;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.saving {
+  margin-top: 30px;
+  color: tomato;
+}
+.rmvbtn {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border: none;
+  padding: 5px 0;
+  border-radius: 7px;
+  width: 100px;
+  background: tomato;
+  color: wheat;
+}
+.rmvbtn:hover {
+  background: orangered;
+  color: white;
+  transform: scale(0.9, 0.9);
+}
+.carteditdiv {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 15px;
+  align-items: flex-end;
+}
+.quantitydiv {
+  display: flex;
+  justify-content: center;
+  height: 28px;
+}
+.quantitydiv p {
+  padding: 0px 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.quantitydiv > div {
+  padding: 0px 10px 0;
+  text-align: center;
+  font-weight: bold;
+  color: tomato;
+  border: 1px solid tomato;
+}
+.quantitydiv > div:nth-of-type(1) {
+  background: tomato;
+  color: white;
+  cursor: pointer;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.quantitydiv > div:nth-of-type(3) {
+  background: tomato;
+  color: white;
+  cursor: pointer;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
